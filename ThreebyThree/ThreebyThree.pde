@@ -20,6 +20,7 @@ void setup()
   size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
+  String ls="Lanscape or Square", p="portrait", DO="DisplayOrientation:", instruct="Bro, turn your phone";
   //Swap display key variables for testing
   int appWidth = width; //displayWidth
   int appHeight = height; //displayHeight
