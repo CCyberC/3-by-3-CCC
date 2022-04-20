@@ -21,6 +21,7 @@ void setup()
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   String ls="Lanscape or Square", p="portrait", DO="DisplayOrientation:", instruct="Bro, turn your phone";
+  String orientation = () ? : ; //Ternary Operator, repeats IF-ElSE
   //Swap display key variables for testing
   int appWidth = width; //displayWidth
   int appHeight = height; //displayHeight
