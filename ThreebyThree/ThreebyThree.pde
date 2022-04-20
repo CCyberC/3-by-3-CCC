@@ -7,7 +7,30 @@ void setup()
 //
 void draw() 
 {
-  
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //""
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
+  rect(); //
 }//End draw
 //
 void keyPressed() 
