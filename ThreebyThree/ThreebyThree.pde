@@ -18,8 +18,8 @@ void setup()
 {
   //Display Geometry
   fullScreen(); //displayWidth, displayHeight
-  int appWidth;
-  int appHeight;
+  int appWidth = displayWidth;
+  int appHeight = displayHeight;
   //
   /*Population
   buttonX1 = ; 
@@ -30,6 +30,9 @@ void setup()
   buttonY2 = ;
   buttonWidth2 = ;
   buttonHeight2 = ;
+  */
+  /*
+  
   */
 }//End setup
 //
