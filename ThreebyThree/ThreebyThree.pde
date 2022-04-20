@@ -25,6 +25,7 @@ void setup()
   int appWidth = width; //displayWidth
   int appHeight = height; //displayHeight
   String orientation = ( appWidth >= appHeight ) ? ls : p ; //Ternary Operator, repeats IF-ElSE
+  println (DO, orientation);
   println (appWidth, appHeight);
   //
   /*Population
