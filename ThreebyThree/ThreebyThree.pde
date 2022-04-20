@@ -24,7 +24,7 @@ void setup()
   //Swap display key variables for testing
   int appWidth = width; //displayWidth
   int appHeight = height; //displayHeight
-  String orientation = () ? : ; //Ternary Operator, repeats IF-ElSE
+  String orientation = ( appWidth >= appHeight ) ? : ; //Ternary Operator, repeats IF-ElSE
   println (appWidth, appHeight);
   //
   /*Population
