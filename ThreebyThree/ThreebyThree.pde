@@ -20,8 +20,9 @@ void setup()
   fullScreen(); //displayWidth, displayHeight
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
-  int appWidth = displayWidth;
-  int appHeight = displayHeight;
+  //Swap display key variables for testing
+  int appWidth = displayWidth; //width
+  int appHeight = displayHeight; //height
   //
   /*Population
   buttonX1 = ; 
