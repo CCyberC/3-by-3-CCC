@@ -23,6 +23,7 @@ void setup()
   //Swap display key variables for testing
   int appWidth = displayWidth; //width
   int appHeight = displayHeight; //height
+  println (appWidth, appHeight);
   //
   /*Population
   buttonX1 = ; 
