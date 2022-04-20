@@ -17,7 +17,7 @@ float buttonX12, buttonY12, buttonWidth12, buttonHeight12;
 void setup() 
 {
   //Display Geometry
-  size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
+  size( 400, 700 );//fullScreen(); //displayWidth, displayHeight
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   String ls="Lanscape or Square", p="portrait", DO="DisplayOrientation:", instruct="Bro, turn your phone";
