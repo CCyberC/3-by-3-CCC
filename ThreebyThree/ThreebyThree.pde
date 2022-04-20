@@ -17,12 +17,12 @@ float buttonX12, buttonY12, buttonWidth12, buttonHeight12;
 void setup() 
 {
   //Display Geometry
-  fullScreen(); //displayWidth, displayHeight
+  size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   //Swap display key variables for testing
-  int appWidth = displayWidth; //width
-  int appHeight = displayHeight; //height
+  int appWidth = width; //displayWidth
+  int appHeight = height; //displayHeight
   println (appWidth, appHeight);
   //
   /*Population
@@ -36,16 +36,16 @@ void setup()
   buttonHeight2 = ;
   */
   /*
-  buttonX3; buttonY3; buttonWidth3; buttonHeight3;
-  buttonX4; buttonY4; buttonWidth4; buttonHeight4; 
-  buttonX5; buttonY5; buttonWidth5; buttonHeight5; 
-  buttonX6; buttonY6; buttonWidth6; buttonHeight6; 
-  buttonX7; buttonY7; buttonWidth7; buttonHeight7; 
-  buttonX8; buttonY8; buttonWidth8; buttonHeight8; 
-  buttonX9; buttonY9; buttonWidth9; buttonHeight9; 
-  buttonX10; buttonY10; buttonWidth10; buttonHeight10; 
-  buttonX11; buttonY11; buttonWidth11; buttonHeight11; 
-  buttonX12; buttonY12; buttonWidth12; buttonHeight12;
+  buttonX3 = ; buttonY3 = ; buttonWidth3 = ; buttonHeight3 = ;
+  buttonX4 = ; buttonY4 = ; buttonWidth4 = ; buttonHeight4 = ; 
+  buttonX5 = ; buttonY5 = ; buttonWidth5 = ; buttonHeight5 = ; 
+  buttonX6 = ; buttonY6 = ; buttonWidth6 = ; buttonHeight6 = ; 
+  buttonX7 = ; buttonY7 = ; buttonWidth7 = ; buttonHeight7 = ; 
+  buttonX8 = ; buttonY8 = ; buttonWidth8 = ; buttonHeight8 = ; 
+  buttonX9 = ; buttonY9 = ; buttonWidth9 = ; buttonHeight9 = ; 
+  buttonX10 = ; buttonY10 = ; buttonWidth10 = ; buttonHeight10 = ; 
+  buttonX11 = ; buttonY11 = ; buttonWidth11 = ; buttonHeight11 = ; 
+  buttonX12 = ; buttonY12 = ; buttonWidth12 = ; buttonHeight12 = ;
   */
 }//End setup
 //
