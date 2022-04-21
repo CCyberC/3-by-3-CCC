@@ -50,10 +50,10 @@ void setup()
    rectDisplayY = appHeight*1/8; 
    rectDisplayWidth = buttonWidth1;
    rectDisplayHeight = buttonHeight1;
-   ellipseX = appWidth;
+   ellipseX = appWidth*6/8;
    ellipseY = appHeight;
-   ellipseXDiameter = appWidth;
-   ellipseYDiameter = appHeight;
+   ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
+   ellipseYDiameter = appHeight*1/8;
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
