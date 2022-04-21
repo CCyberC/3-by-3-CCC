@@ -59,8 +59,8 @@ void setup()
    float ellipseRectYCentre = ellipseY + (ellipseYDiameter*1/2);
    x = ellipseRectXCenter; 
    y = ellipseRectYCentre; 
-   xDiameter = appWidth; 
-   yDiameter = appHeight;
+   xDiameter = ellipseXDiameter; 
+   yDiameter = ellipseYDiameter;
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
