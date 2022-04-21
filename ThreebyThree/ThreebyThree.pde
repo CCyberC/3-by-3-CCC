@@ -66,7 +66,7 @@ void setup()
    y = ellipseRectYCentre; 
    xDiameter = ellipseXDiameter; 
    yDiameter = ellipseYDiameter;
-   titleFont = createFont();
+   titleFont = createFont("", 55);
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
