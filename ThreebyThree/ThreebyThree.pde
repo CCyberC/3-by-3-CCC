@@ -3,6 +3,7 @@ float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
 float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
 float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
 float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
+float x, y, xDiameter, yDiameter;
 /*
 float buttonX3, buttonY3, buttonWidth3, buttonHeight3;
  float buttonX4, buttonY4, buttonWidth4, buttonHeight4;
@@ -51,9 +52,15 @@ void setup()
    rectDisplayWidth = buttonWidth1;
    rectDisplayHeight = buttonHeight1;
    ellipseX = appWidth*6/8;
-   ellipseY = appHeight;
+   ellipseY = rectDisplayY;
    ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
    ellipseYDiameter = appHeight*1/8;
+   float ellipseRectXCenter = ellipseX + (ellipseXDiameter*1/2);
+   float ellipseRectYCentre = ellipseY + (ellipseYDiameter*1/2);
+   x = ellipseRectXCenter; 
+   y = ellipseRectYCentre; 
+   xDiameter = appWidth; 
+   yDiameter = appHeight;
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
@@ -74,7 +81,7 @@ void draw()
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2); //DIV: ""
   rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
   rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter);
-  //ellipse()
+  ellipse(x, y, xDiameter, yDiameter);
   /*
   rect(buttonX3, buttonY3, buttonWidth3, buttonHeight3); //DIV: ""
    rect(buttonX4, buttonY4, buttonWidth4, buttonHeight4); //DIV: ""
