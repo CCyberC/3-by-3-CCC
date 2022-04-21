@@ -6,6 +6,9 @@ float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
 float x, y, xDiameter, yDiameter;
 color black=#000000, white=#FFFFE1; //good for nightMode, blue is 0, white is not nightMode
 Boolean rectON=false, ellipseON=false;
+String title = "YOO!";
+PFont titleFont;
+color grey=#464646, resetDefaultInk=#FFFFFF;
 /*
 float buttonX3, buttonY3, buttonWidth3, buttonHeight3;
  float buttonX4, buttonY4, buttonWidth4, buttonHeight4;
@@ -63,6 +66,7 @@ void setup()
    y = ellipseRectYCentre; 
    xDiameter = ellipseXDiameter; 
    yDiameter = ellipseYDiameter;
+   titleFont = createFont();
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
