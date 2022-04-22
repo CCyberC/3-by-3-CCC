@@ -24,4 +24,16 @@ void population()
    xDiameter = ellipseXDiameter; 
    yDiameter = ellipseYDiameter;
    titleFont = createFont("Jokerman", 55);
+   /*
+   buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
+   buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
+   buttonX5 = appWidth; buttonY5 = appHeight; buttonWidth5 = appWidth; buttonHeight5 = appHeight; 
+   buttonX6 = appWidth; buttonY6 = appHeight; buttonWidth6 = appWidth; buttonHeight6 = appHeight; 
+   buttonX7 = appWidth; buttonY7 = appHeight; buttonWidth7 = appWidth; buttonHeight7 = appHeight; 
+   buttonX8 = appWidth; buttonY8 = appHeight; buttonWidth8 = appWidth; buttonHeight8 = appHeight; 
+   buttonX9 = appWidth; buttonY9 = appHeight; buttonWidth9 = appWidth; buttonHeight9 = appHeight; 
+   buttonX10 = appWidth; buttonY10 = appHeight; buttonWidth10 = appWidth; buttonHeight10 = appHeight; 
+   buttonX11 = appWidth; buttonY11 = appHeight; buttonWidth11 = appWidth; buttonHeight11 = appHeight; 
+   buttonX12 = appWidth; buttonY12 = appHeight; buttonWidth12 = appWidth; buttonHeight12 = appHeight;
+   */
 }//End Population
