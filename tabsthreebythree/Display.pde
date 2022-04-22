@@ -1,10 +1,13 @@
+//Global Variables
+int appWidth, appHeight;
+//
 void displayOreintation() 
 {
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   //Swap display key variables for testing
-  int appWidth = width; //displayWidth
-  int appHeight = height; //displayHeight
+  appWidth = width; //displayWidth
+  appHeight = height; //displayHeight
   String ls="Lanscape or Square", p="portrait", DO="Display Orientation:", instruct="Rotate your phone";
   String orientation = ( appWidth >= appHeight ) ? ls : p ; //Ternary Operator, repeats IF-ElSE
   println (DO, orientation);
