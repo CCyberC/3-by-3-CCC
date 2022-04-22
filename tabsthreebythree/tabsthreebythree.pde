@@ -30,6 +30,7 @@ void setup()
   size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
   displayOrientation();
   population();
+  textSetup();
 }//End setup
 //
 void draw() 
