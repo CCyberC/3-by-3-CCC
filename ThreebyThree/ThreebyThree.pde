@@ -33,7 +33,7 @@ void setup()
   //Swap display key variables for testing
   int appWidth = width; //displayWidth
   int appHeight = height; //displayHeight
-  String ls="Lanscape or Square", p="portrait", DO="Display Orientation:", instruct="Bro, rotate your phone";
+  String ls="Lanscape or Square", p="portrait", DO="Display Orientation:", instruct="Rotate your phone";
   String orientation = ( appWidth >= appHeight ) ? ls : p ; //Ternary Operator, repeats IF-ElSE
   println (DO, orientation);
   if (orientation==ls) {
