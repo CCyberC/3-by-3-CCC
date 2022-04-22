@@ -10,7 +10,7 @@ Boolean rectON=false, ellipseON=false;
 String title1 = "YOO!";
 String title2 = "cici";
 PFont titleFont;
-color grey=#464646, resetDefaultInk=#FFFFFF;
+color grey=#464646;
 /*
 float buttonX3, buttonY3, buttonWidth3, buttonHeight3;
  float buttonX4, buttonY4, buttonWidth4, buttonHeight4;
@@ -62,8 +62,8 @@ void setup()
    ellipseY = rectDisplayY;
    ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
    ellipseYDiameter = appHeight*1/8;
-   float ellipseRectXCenter = ellipseX + (ellipseXDiameter*1/2);
-   float ellipseRectYCentre = ellipseY + (ellipseYDiameter*1/2);
+   float ellipseRectXCenter = ellipseX + ellipseXDiameter*1/2;
+   float ellipseRectYCentre = ellipseY + ellipseYDiameter*1/2;
    x = ellipseRectXCenter; 
    y = ellipseRectYCentre; 
    xDiameter = ellipseXDiameter; 
@@ -91,12 +91,13 @@ void draw()
   if (rectON==true && ellipseON==false) rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
   //rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter);
   if (rectON==false && ellipseON==true) ellipse(x, y, xDiameter, yDiameter);
+  //
   fill(grey);
   textAlign(CENTER, CENTER);
   textFont(titleFont, 20);
   text(title1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
   text(title2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
-  fill(resetDefaultInk);
+  fill(white);
   /*
   rect(buttonX3, buttonY3, buttonWidth3, buttonHeight3); //DIV: ""
    rect(buttonX4, buttonY4, buttonWidth4, buttonHeight4); //DIV: ""
@@ -134,7 +135,7 @@ void mousePressed()
   rectON = false;
   ellipseON = false;
   if ( mouseX>=buttonX1 && mouseX<=buttonX1+buttonWidth1 && mouseY>=buttonY1 && mouseY <=buttonY1+buttonHeight1 ) rectON = true;
-  if ( mouseX>=buttonX2 && mouseX<=buttonX2+buttonWidth2 && mouseY>=buttonX2 && mouseY <=buttonY2+buttonHeight2 ) ellipseON = true;
+  if ( mouseX>=buttonX2 && mouseX<=buttonX2+buttonWidth2 && mouseY>=buttonY2 && mouseY <=buttonY2+buttonHeight2 ) ellipseON = true;
 }//End mousePressed
 //
 //End MAIN
