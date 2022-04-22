@@ -29,8 +29,7 @@ void setup()
   //Display Geometry
   size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
   displayOreintation();
-  //
-  Population();
+  population();
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 

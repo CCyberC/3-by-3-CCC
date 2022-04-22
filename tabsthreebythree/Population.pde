@@ -1,4 +1,4 @@
-void Population() 
+void population() 
 {
   //Population
    buttonX1 = appWidth*1/4; 
