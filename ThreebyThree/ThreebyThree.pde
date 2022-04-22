@@ -95,10 +95,6 @@ void draw()
   textAlign(CENTER, CENTER);
   textFont(titleFont, 20);
   text(title1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
-  fill(resetDefaultInk); 
-  fill(grey);
-  textAlign(CENTER, CENTER);
-  textFont(titleFont, 20);
   text(title2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
   fill(resetDefaultInk);
   /*
