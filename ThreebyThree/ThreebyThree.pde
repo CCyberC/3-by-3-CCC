@@ -6,7 +6,8 @@ float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
 float x, y, xDiameter, yDiameter;
 color black=#000000, white=#FFFFE1; //good for nightMode, blue is 0, white is not nightMode
 Boolean rectON=false, ellipseON=false;
-String title = "YOO!";
+String title1 = "YOO!";
+String title2 = "cici";
 PFont titleFont;
 color grey=#464646, resetDefaultInk=#FFFFFF;
 /*
@@ -41,7 +42,7 @@ void setup()
     appWidth = appWidth*0;
     appHeight = appHeight*0;
   }
-  println("App Geometry is:", "/tApp Width:", appWidth, "/t/tApp Height", appHeight);
+  println("App Geometry is:", "/t/App Width:", appWidth, "/t/t/App Height", appHeight);
   //
   //Population
    buttonX1 = appWidth*1/4; 
@@ -66,7 +67,7 @@ void setup()
    y = ellipseRectYCentre; 
    xDiameter = ellipseXDiameter; 
    yDiameter = ellipseYDiameter;
-   titleFont = createFont("", 55);
+   titleFont = createFont("Jokerman", 55);
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
@@ -85,10 +86,21 @@ void draw()
 {
   background(black);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1); //DIV: ""
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 120);
+  text(title1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  fill(resetDefaultInk);
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2); //DIV: ""
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 120);
+  text(title2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+  fill(resetDefaultInk);
   if (rectON==true && ellipseON==false) rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
   //rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter);
   if (rectON==false && ellipseON==true) ellipse(x, y, xDiameter, yDiameter);
+  
   /*
   rect(buttonX3, buttonY3, buttonWidth3, buttonHeight3); //DIV: ""
    rect(buttonX4, buttonY4, buttonWidth4, buttonHeight4); //DIV: ""
