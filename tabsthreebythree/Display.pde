@@ -1,4 +1,5 @@
-void displayOreintation() {
+void displayOreintation() 
+{
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
   //Swap display key variables for testing
