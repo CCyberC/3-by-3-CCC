@@ -30,30 +30,7 @@ void setup()
   size( 600, 400 );//fullScreen(); //displayWidth, displayHeight
   displayOreintation();
   //
-  //Population
-   buttonX1 = appWidth*1/4; 
-   buttonY1 = appHeight*3/4; 
-   buttonWidth1 = appWidth*1/5;
-   buttonHeight1 = appHeight*1/5;
-   buttonX2 = appWidth*3/4; 
-   buttonY2 = buttonY1;
-   buttonWidth2 = buttonWidth1;
-   buttonHeight2 = buttonHeight1;
-   rectDisplayX = appWidth*1/8;
-   rectDisplayY = appHeight*1/8; 
-   rectDisplayWidth = buttonWidth1;
-   rectDisplayHeight = buttonHeight1;
-   ellipseX = appWidth*6/8;
-   ellipseY = rectDisplayY;
-   ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
-   ellipseYDiameter = appHeight*1/8;
-   float ellipseRectXCenter = ellipseX + ellipseXDiameter*1/2;
-   float ellipseRectYCentre = ellipseY + ellipseYDiameter*1/2;
-   x = ellipseRectXCenter; 
-   y = ellipseRectYCentre; 
-   xDiameter = ellipseXDiameter; 
-   yDiameter = ellipseYDiameter;
-   titleFont = createFont("Jokerman", 55);
+  Population();
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
