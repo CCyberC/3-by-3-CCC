@@ -86,21 +86,20 @@ void draw()
 {
   background(black);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1); //DIV: ""
-  fill(grey);
-  textAlign(CENTER, CENTER);
-  textFont(titleFont, 120);
-  text(title1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
-  fill(resetDefaultInk);
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2); //DIV: ""
-  fill(grey);
-  textAlign(CENTER, CENTER);
-  textFont(titleFont, 120);
-  text(title2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
-  fill(resetDefaultInk);
   if (rectON==true && ellipseON==false) rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
   //rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter);
   if (rectON==false && ellipseON==true) ellipse(x, y, xDiameter, yDiameter);
-  
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 20);
+  text(title1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  fill(resetDefaultInk); 
+  fill(grey);
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 20);
+  text(title2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+  fill(resetDefaultInk);
   /*
   rect(buttonX3, buttonY3, buttonWidth3, buttonHeight3); //DIV: ""
    rect(buttonX4, buttonY4, buttonWidth4, buttonHeight4); //DIV: ""
