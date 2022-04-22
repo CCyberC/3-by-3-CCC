@@ -6,6 +6,7 @@ float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
 float x, y, xDiameter, yDiameter;
 color black=#000000, white=#FFFFE1; //good for nightMode, blue is 0, white is not nightMode
 Boolean rectON=false, ellipseON=false;
+//
 String title1 = "YOO!";
 String title2 = "cici";
 PFont titleFont;
@@ -42,7 +43,7 @@ void setup()
     appWidth = appWidth*0;
     appHeight = appHeight*0;
   }
-  println("App Geometry is:", "/t/App Width:", appWidth, "/t/t/App Height", appHeight);
+  println("App Geometry is:", "\tApp Width:", appWidth, "\t\tApp Height", appHeight);
   //
   //Population
    buttonX1 = appWidth*1/4; 
