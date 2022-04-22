@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
 //
-void displayOreintation() 
+void displayOrientation() 
 {
   //Display Orientation: Landscape, not portrait nor square
   println (width, height, displayWidth, displayHeight);
