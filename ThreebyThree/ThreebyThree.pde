@@ -32,25 +32,25 @@ void setup()
   println("App Geometry is:", "\tApp Width:", appWidth, "\t\tApp Height", appHeight);
   //
   //Population
-   buttonX1 = appWidth*1/4; 
-   buttonY1 = appHeight*3/4; 
-   buttonWidth1 = appWidth*1/5;
-   buttonHeight1 = appHeight*1/5;
-   rectDisplayX = appWidth*1/8;
-   rectDisplayY = appHeight*1/8; 
-   rectDisplayWidth = buttonWidth1;
-   rectDisplayHeight = buttonHeight1;
-   ellipseX = appWidth*6/8;
-   ellipseY = rectDisplayY;
-   ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
-   ellipseYDiameter = appHeight*1/8;
-   float ellipseRectXCenter = ellipseX + ellipseXDiameter*1/2;
-   float ellipseRectYCentre = ellipseY + ellipseYDiameter*1/2;
-   x = ellipseRectXCenter; 
-   y = ellipseRectYCentre; 
-   xDiameter = ellipseXDiameter; 
-   yDiameter = ellipseYDiameter;
-   titleFont = createFont("Jokerman", 55);
+  buttonX1 = appWidth*1/4; 
+  buttonY1 = appHeight*3/4; 
+  buttonWidth1 = appWidth*1/5;
+  buttonHeight1 = appHeight*1/5;
+  rectDisplayX = appWidth*1/8;
+  rectDisplayY = appHeight*1/8; 
+  rectDisplayWidth = buttonWidth1;
+  rectDisplayHeight = buttonHeight1;
+  ellipseX = appWidth*6/8;
+  ellipseY = rectDisplayY;
+  ellipseXDiameter = appWidth*1/8; //Note: formulae not "square" but same
+  ellipseYDiameter = appHeight*1/8;
+  float ellipseRectXCenter = ellipseX + ellipseXDiameter*1/2;
+  float ellipseRectYCentre = ellipseY + ellipseYDiameter*1/2;
+  x = ellipseRectXCenter; 
+  y = ellipseRectYCentre; 
+  xDiameter = ellipseXDiameter; 
+  yDiameter = ellipseYDiameter;
+  titleFont = createFont("Jokerman", 55);
   /*
    buttonX3 = appWidth; buttonY3 = appHeight; buttonWidth3 = appWidth; buttonHeight3 = appHeight;
    buttonX4 = appWidth; buttonY4 = appHeight; buttonWidth4 = appWidth; buttonHeight4 = appHeight; 
@@ -88,15 +88,16 @@ void mousePressed()
 {
   rectON = false; //"Third Button"
   ellipseON = false;
-  if ( rectON==true ) {
-    rectON=false;
-    ellipseON=true;
-  } else {
-    rectON=true;
-    ellipseON=false;
+  println("Before the Button", "\tRect", rectON, "\tEllipse", ellipseON);
+  if ( mouseX>=buttonX1 && mouseX<=buttonX1+buttonWidth1 && mouseY>=buttonY1 && mouseY <=buttonY1+buttonHeight1 ) {
+    if ( rectON==true ) {
+      rectON=false;
+      ellipseON=true;
+    } else {
+      rectON=true;
+      ellipseON=false;
+    }
   }
-  if ( mouseX>=buttonX1 && mouseX<=buttonX1+buttonWidth1 && mouseY>=buttonY1 && mouseY <=buttonY1+buttonHeight1 ) rectON = true;
-  
 }//End mousePressed
 //
 //End MAIN
